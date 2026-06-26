@@ -3,14 +3,14 @@ requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ros2top"
+name = "ros2top-auto"
 dynamic = ["version"]
-description = "A real-time process monitor with support for ROS2 nodes, showing CPU, RAM, and GPU usage"
+description = "Real-time ROS2 node monitor with automatic process discovery — no node code changes required"
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
 authors = [
-  { name = "Ahmed Radwan", email = "ahmed.ali.radwan94@gmail.com" },
+  { name = "robot.com Engineering Team", email = "sgranada@robot.com" },
 ]
 keywords = ["monitoring", "process", "ros2", "gpu", "cpu", "memory", "nodes", "system"]
 classifiers = [
@@ -34,7 +34,7 @@ dependencies = [
 ]
 
 [project.scripts]
-ros2top = "ros2top.main:main"
+ros2top-auto = "ros2top.main:main"
 
 [project.urls]
 Homepage = "https://github.com/kiwicampus/ros2top-auto.git"
